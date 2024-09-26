@@ -58,3 +58,20 @@ transaction1 = transaction("1","1","101",1000,"2023-04-01", "deposit")
 
 transaction1.greet()
 
+class loan:
+    def __init__(self, loan_id, amount, interrest_reate, loan_type):
+        self.loan_id = loan_id
+        print(f"loan id is {loan_id}")
+        self.amount = amount
+        print(f"loan amount is {amount}")
+        self.interest_rate = interrest_reate
+        print(f"loan interest rate is {interrest_reate}")
+        self.loan_type = loan_type
+        print(f"type of loan is {loan_type}")
+
+    def greet(self):
+        print("Loan approved successfully")
+
+loan1 = loan("1",5000000,8.00,"home loan")
+
+loan1.greet()
